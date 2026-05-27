@@ -144,13 +144,25 @@ textarea {
     bottom: 0;
 }
 
-.preloader .preloader__img {
-    display: inline-block;
-    position: absolute;
-    width: 150px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.preloader .preloader__img{
+    position:absolute;
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%, -50%);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    width:100%;
+    height:100%;
+}
+
+.preloader .preloader__img img{
+    width:60px;
+    height:auto;
+    object-fit:contain;
 }
 
 /*

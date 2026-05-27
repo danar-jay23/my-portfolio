@@ -1,90 +1,369 @@
-/*
-* ----------------------------------------------------------------------------------------
-Author        : Rama Hardian Sidik
-Template Name : Freeman - Multipurpose Personal One Page Html Template
-Version       : 1.0
-Filename      : responsive.css
-* ----------------------------------------------------------------------------------------
-*/
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
 
-@media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {}
+@media screen and (max-width: 1440px){
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {}
-
-@media only screen and (device-width: 375px) and (device-height: 812px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {}
-
-@media only screen and (device-width: 812px) and (device-height: 375px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {}
-
-@media (min-width: 1366px) {}
-
-@media screen and (max-width: 2560px) {
-    body.openmenu .overlay {
-        display: none;
+    .infohero__title{
+        font-size:70px;
     }
+
 }
 
-@media screen and (max-width: 1440px) {}
 
-@media screen and (max-width: 1366px) {}
+/* =========================================================
+   TABLET
+========================================================= */
 
-@media screen and (max-width: 1280px) {}
+@media screen and (max-width: 1024px){
 
-@media screen and (max-width: 1128px) {}
+    #headermain{
+        padding:15px 0;
+    }
 
-@media screen and (max-width: 1024px) {}
+    .infohero__title{
+        font-size:55px;
+    }
 
-@media (max-width: 999px) {
-    body.openmenu .overlay {
-        display: block;
+    .heroimg,
+    .heroimg .heroimg__poto{
+        width:300px;
+        height:300px;
     }
-    .heroimg {
-        height: 300px;
-        width: 300px;
+
+    .porfoliowarp__item{
+        width:50%;
     }
-    .heroimg .heroimg__poto {
-        height: 300px;
-        width: 300px;
-    }
-    .infohero__p {
-        font-size: 15px;
-    }
-    .infohero__title {
-        font-size: 50px;
-    }
-    .aboutlink {
-        margin: 0 auto;
-    }
-    #typed-text {
-        font-size: 15px;
-    }
-    .porfoliowarp__item {
-        width: 50%;
-    }
+
 }
 
-@media (max-width: 899) {}
 
-@media (max-width: 799px) {
-    .porfoliowarp__item {
-        width: 100%;
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+@media screen and (max-width: 999px){
+
+    body.openmenu .overlay{
+        display:block;
     }
+
+    .overlay{
+        padding-top:100px;
+    }
+
+    .overlay__listnav li{
+        margin:18px 0;
+        text-align:center;
+    }
+
+    .overlay__listnav li a{
+        font-size:22px;
+    }
+
 }
 
-@media only screen and (max-width: 699px) {}
 
-@media only screen and (max-width: 580px) {}
+/* =========================================================
+   MOBILE / TABLET
+========================================================= */
 
-@media (max-width: 480px) {}
+@media screen and (max-width: 768px){
 
-@media (max-width: 360px) {}
+    body{
+        overflow-x:hidden;
+    }
 
-@media all and (-ms-high-contrast: none),
-(-ms-high-contrast: active) {}
+    /* HEADER */
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {}
+    #headermain{
+        padding:14px 0;
+        background:#2f2f2f;
+    }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {}
+    .headerwrap__logo{
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+}
 
-@media(hover: hover) and (pointer: fine) {}
+.headerwrap__logo img{
+    width:55px !important;
+    height:auto;
+    object-fit:contain;
 
-@media screen and (prefers-reduced-motion) {}
+    display:block;
+}
+
+    .navicon{
+        top:10px;
+        right:15px;
+    }
+
+    /* HERO */
+
+    #sectionhero{
+        padding-top:120px;
+        text-align:center;
+    }
+
+    .heroimg{
+        width:220px;
+        height:220px;
+        margin:0 auto 25px auto;
+    }
+
+    .heroimg .heroimg__poto{
+        width:220px;
+        height:220px;
+        box-shadow:none;
+    }
+
+    .infohero{
+        margin-top:20px;
+    }
+
+    .infohero__p{
+        font-size:14px;
+        margin-bottom:15px;
+    }
+
+    .infohero__title{
+        font-size:42px;
+        line-height:1.2;
+        margin-bottom:10px;
+        text-shadow:none;
+    }
+
+    #typed-text{
+        font-size:14px;
+        letter-spacing:2px;
+        display:block;
+        margin-top:10px;
+    }
+
+    /* WAVE */
+
+    #sectionhero svg{
+        display:block;
+        margin-top:40px;
+    }
+
+    /* ABOUT */
+
+    #aboutsection{
+        padding-top:50px;
+    }
+
+    .abouthero{
+        margin-bottom:30px;
+    }
+
+    .abouthero h3{
+        font-size:32px;
+        text-align:center;
+        margin-bottom:25px;
+    }
+
+    .infoabout{
+        text-align:center;
+    }
+
+    .infoabout__wrap{
+        margin-bottom:30px;
+    }
+
+    .infoabout__title{
+        margin-bottom:10px;
+    }
+
+    .infoabout p{
+        line-height:1.8;
+        margin-bottom:0;
+    }
+
+    /* RESUME BUTTON */
+
+    .aboutlink{
+        margin:25px auto 0 auto;
+        display:inline-flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    /* SERVICE */
+
+    .wrapservice{
+        min-height:200px;
+    }
+
+    /* FILTER */
+
+    #filterwrap{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:10px;
+        margin-bottom:30px;
+    }
+
+    #filterwrap li{
+        margin:0;
+        min-width:95px;
+        text-align:center;
+        padding:10px 12px;
+        font-size:14px;
+    }
+
+    /* PORTFOLIO */
+
+    #porfoliowarp{
+    display:grid;
+    grid-template-columns:1fr;
+
+    gap:35px; /* spacing between images */
+
+    padding:0 12px 20px;
+}
+
+.porfoliowarp__item{
+    width:100%;
+    min-height:auto;
+
+    padding:0;
+    margin:0 auto;
+}
+
+.porfoliowarp__content{
+    border-radius:10px;
+    overflow:hidden;
+
+    margin-bottom:10px; /* space below image */
+}
+
+.porfoliowarp__content img{
+    width:100%;
+    height:auto;
+
+    display:block;
+}
+
+.portfolio-label{
+    margin-top:10px;
+    font-size:16px;
+}
+
+.portfolio-sub{
+    font-size:14px;
+}
+
+    /* CONTACT */
+
+    .contactdetail{
+        text-align:center;
+        margin-bottom:40px;
+    }
+
+    .contactdetail__title{
+        font-size:28px;
+    }
+
+    .contactdetail__list li{
+        margin:15px 0;
+    }
+
+    /* PDF */
+
+    .glightbox-content{
+        width:95vw !important;
+        height:90vh !important;
+        max-width:95vw !important;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media screen and (max-width: 480px){
+
+    #headermain{
+        padding:10px 0;
+    }
+
+    .headerwrap__logo img{
+        width:40px !important;
+        height:auto;
+    }
+
+    .infohero__title{
+        font-size:34px;
+    }
+
+    .heroimg,
+    .heroimg .heroimg__poto{
+        width:190px;
+        height:190px;
+    }
+
+    .porfoliowarp__content{
+        height:220px;
+    }
+
+    .contactdetail__title{
+        font-size:24px;
+    }
+
+    .wrapservice i{
+        width:75px;
+        height:75px;
+        font-size:30px;
+    }
+
+    #filterwrap li{
+        min-width:80px;
+        font-size:13px;
+        padding:8px 10px;
+    }
+
+}
+
+
+/* =========================================================
+   EXTRA SMALL DEVICES
+========================================================= */
+
+@media screen and (max-width: 360px){
+
+    .infohero__title{
+        font-size:28px;
+    }
+
+    .heroimg,
+    .heroimg .heroimg__poto{
+        width:160px;
+        height:160px;
+    }
+
+    .porfoliowarp__content{
+        height:200px;
+    }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+@media screen and (prefers-reduced-motion: reduce){
+
+    *{
+        scroll-behavior:auto !important;
+        transition:none !important;
+        animation:none !important;
+    }
+
+}
