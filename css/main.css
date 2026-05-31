@@ -530,11 +530,6 @@ textarea {
     align-items: start;
 }
 
-.grid-gutter-md {
-    margin-left: -8px;
-    margin-right: -8px;
-}
-
 .porfoliowarp__item {
     cursor: pointer;
     text-align: center;
@@ -545,7 +540,7 @@ textarea {
     width: 30%;
     border-radius: 5px;
     overflow: hidden;
-    min-height: 430px;
+    min-height: auto;
     align-items: center;
 }
 .portfolio-label {
@@ -567,7 +562,8 @@ textarea {
 }
 .porfoliowarp__content {
     border-radius: 5px;
-    height: 330px;
+    min-height:330px;
+    height:auto;
     width: 100%;
     transition: all .3s ease;
 }
